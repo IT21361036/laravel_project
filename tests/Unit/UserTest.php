@@ -7,10 +7,10 @@ use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
-    // public function test_login_form():void
-    // {
-    //     $response = $this->get('/login');
+     public function test_login_form():void
+     {
+         $response = $this->get('/login');
 
-    //     $response->assertStatus(200);
-    // }
+         $response->assertStatus(200);
+     }
 }

@@ -9,7 +9,7 @@ class UserTest extends TestCase
 {
     // public function test_login_form():void
     // {
-    //     $response = $this->get('/login');
+    //     $response = $this->get('/');
 
     //     $response->assertStatus(200);
     // }

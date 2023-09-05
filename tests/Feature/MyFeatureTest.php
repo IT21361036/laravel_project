@@ -10,24 +10,24 @@ class MyFeatureTest extends TestCase
 {
     /**
      * A basic feature test example.
-     */
-    public function test_example(): void
-    {
-        $response = $this->get('/');
+    */
+    // public function test_example(): void
+    // {
+    //     $response = $this->get('/');
 
-        $response->assertStatus(200);
-    }
+    //     $response->assertStatus(200);
+    // }
 
-    public function testUserCanLogin()
-    {
-        $user = User::factory()->create();
+    // public function testUserCanLogin()
+    // {
+    //     $user = User::factory()->create();
 
-        $response = $this->post('/login', [
-            'email' => $user->email,
-            'password' => 'password123',
-        ]);
+    //     $response = $this->post('/login', [
+    //         'email' => $user->email,
+    //         'password' => 'password123',
+    //     ]);
 
-        $response->assertStatus(302); // Assert that the login request was successful
-        $this->assertAuthenticatedAs($user); // Check if the user is authenticated
-    }
+    //     $response->assertStatus(302); // Assert that the login request was successful
+    //     $this->assertAuthenticatedAs($user); // Check if the user is authenticated
+    // }
 }

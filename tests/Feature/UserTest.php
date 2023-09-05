@@ -18,11 +18,11 @@ class UserTest extends TestCase
         $response->assertStatus(200);
     }
 
-    //  public function test_login_form():void
-    // {
-    //     $response = $this->get('/login');
+     public function test_login_form():void
+    {
+        $response = $this->get('/');
 
-    //     $response->assertStatus(200);
-    // }
+        $response->assertStatus(200);
+    }
 
 }

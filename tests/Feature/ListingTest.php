@@ -9,15 +9,7 @@ use App\Models\Listing;
 
 class ListingTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     */
-    // public function test_example(): void
-    // {
-    //     $response = $this->get('/');
-
-    //     $response->assertStatus(200);
-    // }
+  
     public function test_view_listing_page(): void
     {
         $listing = Listing::factory()->create();
